@@ -21,6 +21,10 @@ describe("siteConfig NAP (local SEO — must stay consistent everywhere)", () =>
     expect(siteConfig.url).toMatch(/^https:\/\/[^/]+$/);
   });
 
+  it("institute was founded in 2019 (client answer, 2026-09-20)", () => {
+    expect(siteConfig.foundedYear).toBe(2019);
+  });
+
   it("SIRET has 14 digits", () => {
     expect(siteConfig.legal.siret.replace(/\s/g, "")).toMatch(/^\d{14}$/);
   });

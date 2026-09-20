@@ -6,6 +6,8 @@
 export const siteConfig = {
   name: "Beauty Green Institut",
   tagline: "Institut de beauté à Rouen",
+  // Written answers of 2026-09-20 (Q9): founded in 2019.
+  foundedYear: 2019,
   claim: "La beauté comme un moment pour soi.",
   // Provisional Vercel URL until the domain beautygreeninstitut.com is switched over.
   url: "https://beauty-green-institut.vercel.app",
