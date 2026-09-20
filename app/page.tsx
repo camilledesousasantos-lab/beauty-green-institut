@@ -21,7 +21,7 @@ export default function Home() {
       >
         {siteConfig.booking.label}
       </a>
-      <address className="mt-16 max-w-sm text-sm not-italic leading-relaxed text-brun/80">
+      <address className="mt-16 max-w-md text-sm not-italic leading-relaxed text-brun/80">
         {contact.address.street}, {contact.address.postalCode}{" "}
         {contact.address.city}
         <br />
