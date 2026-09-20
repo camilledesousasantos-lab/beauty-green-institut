@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* Brand tokens from the client's charter (§3). Typography families are provisional
+   until the mockup is validated (§4: serif for titles, sans-serif for everything else). */
+@theme {
+  --color-ecru: #f3efe8;
+  --color-beige: #ded5c8;
+  --color-brun: #2e2925;
+  --color-vert: #65705f;
+  --color-blanc-casse: #faf9f6;
+
+  --font-serif: "Cormorant Garamond", "Times New Roman", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
