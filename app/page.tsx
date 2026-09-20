@@ -1,43 +1,49 @@
+"use client";
+
+import { useEffect } from "react";
 import { siteConfig } from "@/lib/site-config";
 
-/** Holding page shown while the real site is being built. */
+const DESKTOP = "/maquette/desktop.html";
+const MOBILE = "/maquette/mobile.html";
+/** Below this width the 1440 px mock would scroll sideways: serve the 390 mock. */
+const MOBILE_MAX_WIDTH = 900;
+
+/**
+ * Validation entry point: the v1 mock produced in Claude Design (2026-09-20),
+ * served as two static bundles. The root picks the one that fits the screen;
+ * the links below remain for readers without JavaScript or who want the other view.
+ */
 export default function Home() {
-  const { contact } = siteConfig;
+  useEffect(() => {
+    const target = window.innerWidth < MOBILE_MAX_WIDTH ? MOBILE : DESKTOP;
+    window.location.replace(target);
+  }, []);
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center px-6 py-16 text-center">
       <p className="text-xs uppercase tracking-[0.3em] text-vert">
-        {siteConfig.tagline}
+        Maquette en validation
       </p>
       <h1 className="mt-6 font-serif text-5xl leading-tight sm:text-6xl">
         {siteConfig.name}
       </h1>
       <p className="mt-6 max-w-md font-serif text-2xl leading-snug">
-        {siteConfig.claim}
+        Ouverture de la maquette…
       </p>
-      <p className="mt-10 text-sm text-brun/70">Nouveau site en préparation.</p>
-      <a
-        href={siteConfig.booking.href}
-        className="mt-8 inline-block bg-brun px-8 py-4 text-xs uppercase tracking-[0.2em] text-blanc-casse transition-colors hover:bg-vert"
-      >
-        {siteConfig.booking.label}
-      </a>
-      <address className="mt-16 max-w-md text-sm not-italic leading-relaxed text-brun/80">
-        {contact.address.street}, {contact.address.postalCode}{" "}
-        {contact.address.city}
-        <br />
-        {contact.hours}
-        <br />
-        <a href={contact.phoneHref} className="underline underline-offset-4">
-          {contact.phone}
-        </a>
-        {" · "}
+      <nav className="mt-10 flex flex-col gap-3 sm:flex-row">
         <a
-          href={contact.instagram.href}
-          className="underline underline-offset-4"
+          href={DESKTOP}
+          className="inline-block bg-brun px-8 py-4 text-xs uppercase tracking-[0.2em] text-blanc-casse transition-colors hover:bg-vert"
         >
-          {contact.instagram.handle}
+          Version ordinateur
         </a>
-      </address>
+        <a
+          href={MOBILE}
+          className="inline-block border border-brun px-8 py-4 text-xs uppercase tracking-[0.2em] text-brun transition-colors hover:bg-beige"
+        >
+          Version téléphone
+        </a>
+      </nav>
     </main>
   );
 }
