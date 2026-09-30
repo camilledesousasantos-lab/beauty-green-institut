@@ -1,0 +1,50 @@
+{
+  "ordre": 5,
+  "titre": "Blanchiment dentaire",
+  "ligne": "Atténuer les colorations du café, du thé ou du tabac.",
+  "imageCarte": "/images/prestation-blanchiment-dentaire-avant-apres.jpeg",
+  "label": "Blanchiment dentaire",
+  "h1": "Blanchiment dentaire à Rouen",
+  "accroche": "Atténuer les colorations liées au café, au thé ou au tabac, avec un protocole encadré.",
+  "image": "/images/prestation-blanchiment-dentaire-avant-apres.jpeg",
+  "quoi": "La séance dure environ une heure. Les gencives sont protégées, un gel à base de peroxyde d'hydrogène est appliqué, puis activé sous lampe LED. Un protocole de préparation limite les sensibilités. Il s'agit d'un soin esthétique : il ne remplace ni un détartrage ni un avis dentaire.",
+  "tarifsTitre": "Séances et tarifs",
+  "tarifsNote": "La deuxième séance n'est possible que dans les quatre semaines suivant la première.",
+  "tarifs": [
+    {
+      "label": "Première séance",
+      "detail": "environ 1 h",
+      "prix": 110
+    },
+    {
+      "label": "Deuxième séance éventuelle",
+      "detail": "dans les 4 semaines",
+      "prix": 60
+    }
+  ],
+  "precautionsIntro": "Le blanchiment dentaire ne convient pas à toutes les situations. En cas de doute, demandez conseil à votre dentiste avant de prendre rendez-vous.",
+  "precautions": [
+    "Grossesse et allaitement",
+    "Éléments en résine ou composite sur les dents",
+    "Hypersensibilité dentaire ou gingivale",
+    "Soins dentaires en cours ou récents"
+  ],
+  "footnote": "Le résultat varie d'une personne à l'autre, selon la teinte de départ et l'origine des colorations. Il ne peut pas être garanti à l'avance.",
+  "apres": [
+    "Pendant 24 heures : pas de tabac.",
+    "Boire uniquement de l'eau.",
+    "Privilégier une alimentation claire — riz, pâtes, poulet, fruits et légumes clairs — le temps que les dents se restabilisent."
+  ],
+  "faq": [
+    {
+      "q": "Le résultat est-il garanti ?",
+      "a": "Non. La teinte obtenue dépend de la dentition de départ et de l'origine des colorations. On en parle ensemble avant de commencer."
+    },
+    {
+      "q": "Combien de temps dure le résultat ?",
+      "a": "Cela dépend beaucoup des habitudes : café, thé, vin rouge et tabac recolorent progressivement les dents."
+    }
+  ],
+  "seoTitle": "Blanchiment dentaire à Rouen",
+  "seoDescription": "Blanchiment dentaire esthétique à Rouen : protocole encadré sous lampe LED, tarifs, contre-indications et conseils pour les 24 heures qui suivent."
+}

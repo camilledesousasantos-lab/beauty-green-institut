@@ -1,0 +1,113 @@
+{
+  "ordre": 1,
+  "titre": "Électrolyse",
+  "ligne": "Épilation définitive poil par poil, sur tous types de poils.",
+  "imageCarte": "/images/prestation-electrolyse-menton.jpeg",
+  "label": "Électrolyse",
+  "h1": "Électrolyse à Rouen",
+  "accroche": "L'expertise majeure de l'institut : une épilation définitive, poil par poil, quel que soit le poil.",
+  "image": "/images/institut-cabine.jpeg",
+  "proof": "/images/prestation-electrolyse-menton.jpeg",
+  "proofCaption": "Repousses sur le menton avant une séance.",
+  "quoi": "L'électrolyse traite le poil un à un, à l'aide d'un filament fin glissé le long du poil. Une impulsion très courte agit sur la zone qui permet au poil de repousser. Contrairement au laser, la méthode ne dépend ni de la couleur du poil ni de celle de la peau : elle convient aux poils les plus fins comme aux plus épais, des plus clairs aux plus foncés.",
+  "quoi2": "Le poil pousse par cycles. Plusieurs passages sont donc nécessaires sur une même zone, espacés dans le temps. Le rythme et le nombre de séances se définissent ensemble, séance après séance, en fonction de ce que la peau montre.",
+  "zones": [
+    "Visage",
+    "Buste et poitrine",
+    "Aisselles",
+    "Ligne du ventre",
+    "Maillot, en retouche après laser uniquement"
+  ],
+  "blocs": [
+    {
+      "t": "Pour qui",
+      "d": "Toute personne gênée par une pilosité que les autres méthodes ne traitent pas : poils blancs, blonds, roux, poils isolés, duvet épaissi, repousses après laser."
+    },
+    {
+      "t": "Objectifs",
+      "d": "Réduire durablement la pilosité d'une zone, poil par poil, sans viser un résultat immédiat ni un calendrier fixe."
+    },
+    {
+      "t": "Déroulement",
+      "d": "Nettoyage de la zone, installation confortable, travail poil par poil sous lumière, puis application d'un apaisant. Des rougeurs discrètes peuvent apparaître quelques heures."
+    },
+    {
+      "t": "Durée",
+      "d": "De 10 à 60 minutes selon la zone et la densité. On commence court, puis on allonge les séances si la peau le supporte bien."
+    }
+  ],
+  "bilan": {
+    "titre": "Le premier rendez-vous",
+    "texte": "Le premier rendez-vous est un bilan : on regarde la zone, on parle de vos antécédents, du rythme possible, et la séance se termine par quinze minutes de traitement offertes pour que vous sachiez exactement ce que vous ressentez avant de vous engager.",
+    "prix": 45,
+    "mention": "Consultation + première séance de 15 minutes offerte"
+  },
+  "tarifsTitre": "Des séances à la durée",
+  "tarifsNote": "Le bilan du premier rendez-vous comprend la consultation et quinze minutes de séance offertes — 45 €.",
+  "tarifs": [
+    {
+      "label": "10 min",
+      "prix": 32
+    },
+    {
+      "label": "15 min",
+      "prix": 45
+    },
+    {
+      "label": "20 min",
+      "prix": 53
+    },
+    {
+      "label": "30 min",
+      "prix": 70
+    },
+    {
+      "label": "35 min",
+      "prix": 82
+    },
+    {
+      "label": "45 min",
+      "prix": 98
+    },
+    {
+      "label": "50 min",
+      "prix": 108
+    },
+    {
+      "label": "60 min",
+      "prix": 115
+    }
+  ],
+  "precautions": [
+    "Prévenir en cas de grossesse, de traitement hormonal en cours ou de prise d'isotrétinoïne.",
+    "Pas de séance sur une peau lésée, irritée, brûlée par le soleil ou récemment bronzée.",
+    "Pas de maquillage ni de crème sur la zone le jour du rendez-vous.",
+    "Ne pas épiler à la pince ni à la cire entre deux séances : le poil doit être visible pour être traité.",
+    "Éviter piscine, sauna et exposition solaire pendant 48 heures après la séance."
+  ],
+  "footnote": "L'électrolyse est un soin esthétique. En cas de pilosité soudaine ou inhabituelle, un avis médical est recommandé avant de commencer.",
+  "faq": [
+    {
+      "q": "Électrolyse ou laser : que choisir ?",
+      "a": "Le laser cible la mélanine : il agit surtout sur les poils foncés sur peau claire. L'électrolyse traite le poil un par un, indépendamment de sa couleur. Les deux méthodes se complètent souvent, l'électrolyse prenant le relais sur ce que le laser laisse."
+    },
+    {
+      "q": "Est-ce douloureux ?",
+      "a": "La sensation est brève et se décrit souvent comme un picotement chaud. Elle varie selon la zone et la sensibilité de chacune. On avance progressivement, on adapte l'intensité et on s'arrête dès que c'est nécessaire."
+    },
+    {
+      "q": "Combien de séances faut-il ?",
+      "a": "Cela dépend de la zone, de la densité et du cycle de repousse, qui est propre à chacune. Aucun nombre n'est annoncé à l'avance : on fait le point régulièrement à partir de ce que l'on observe."
+    },
+    {
+      "q": "Quelles zones sont traitées ?",
+      "a": "Visage, buste et poitrine, aisselles, ligne du ventre. Le maillot est traité uniquement en retouche après un laser."
+    },
+    {
+      "q": "Comment préparer sa peau ?",
+      "a": "Laisser pousser le poil quelques jours, venir sans maquillage ni crème sur la zone, éviter le soleil les jours précédents et bien hydrater la peau le reste du temps."
+    }
+  ],
+  "seoTitle": "Électrolyse à Rouen, épilation définitive poil par poil",
+  "seoDescription": "Électrolyse à Rouen chez Beauty Green Institut : épilation définitive poil par poil, sur tous types de poils. Bilan du premier rendez-vous, tarifs à la durée et précautions."
+}

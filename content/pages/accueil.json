@@ -1,0 +1,25 @@
+{
+  "label": "Institut de beauté à Rouen",
+  "titre": "Beauty Green Institut",
+  "accroche": "La beauté comme un moment pour soi.",
+  "intro": "Beauty Green Institut est un institut de beauté à Rouen, pensé comme un espace de confiance. On y vient pour prendre soin de soi, sans pression et sans standard imposé. Chaque soin est adapté à la peau, au rythme et aux envies de celle qui le reçoit. Le temps passé ici est d'abord un temps pour soi.",
+  "hero": {
+    "image": "/images/institut-devanture.jpeg",
+    "alt": "La devanture de Beauty Green Institut, 8 rue Anatole France à Rouen"
+  },
+  "institut": {
+    "titre": "Un lieu calme, rue Anatole France",
+    "texte": "L'institut a ouvert il y a six ans, rue Anatole France. Un lieu calme, tenu par une seule praticienne, où l'écoute compte autant que le geste. Les rendez-vous sont espacés pour que personne ne se croise ni ne se presse."
+  },
+  "instagram": {
+    "titre": "L'univers Beauty Green",
+    "photos": [
+      "/images/institut-cabine.jpeg",
+      "/images/prestation-rehaussement-cils.jpeg",
+      "/images/institut-accueil-logo-mural.jpeg",
+      "/images/prestation-brow-lift.jpeg",
+      "/images/institut-devanture.jpeg",
+      "/images/prestation-blanchiment-dentaire-avant-apres.jpeg"
+    ]
+  }
+}

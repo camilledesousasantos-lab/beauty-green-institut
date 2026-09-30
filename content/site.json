@@ -1,0 +1,17 @@
+{
+  "nom": "Beauty Green Institut",
+  "planity": "https://www.planity.com/beauty-green-x-onglartiste-76000-rouen",
+  "instagram": {
+    "handle": "@beautygreeninstitut",
+    "url": "https://www.instagram.com/beautygreeninstitut/"
+  },
+  "tel": "07 86 66 87 99",
+  "telHref": "tel:+33786668799",
+  "adresse": {
+    "rue": "8 rue Anatole France",
+    "cp": "76000",
+    "ville": "Rouen"
+  },
+  "horaires": ["Mardi à vendredi", "10h45 – 19h00", "Sur rendez-vous"],
+  "horairesLigne": "Mardi à vendredi, 10h45 – 19h00, sur rendez-vous"
+}

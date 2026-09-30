@@ -1,0 +1,23 @@
+{
+  "label": "L'Institut",
+  "h1": "Un espace pensé pour les femmes",
+  "texte": [
+    "J'ai ouvert Beauty Green Institut il y a six ans, rue Anatole France, à Rouen. Au départ, il y a une passion pour la beauté, l'esthétique et le bien-être. Très vite, il y a eu autre chose : l'envie de créer un lieu où les femmes se sentent à leur place.",
+    "Ici, on vient prendre soin de soi et se détendre. On vient aussi, souvent, pour le moment d'échange. Je travaille seule, sur rendez-vous, avec du temps entre chaque cliente : cela me permet d'écouter, d'expliquer et d'adapter chaque soin.",
+    "Je ne crois pas aux standards de beauté imposés. Je crois à la confiance, au confort et au plaisir de se sentir bien. C'est ce que j'essaie de mettre dans chaque geste."
+  ],
+  "signature": "Camille, fondatrice",
+  "valeurs": [
+    "Self-acceptation",
+    "Confiance",
+    "Féminité",
+    "Temps pour soi",
+    "Liberté"
+  ],
+  "portrait": "/images/camille-portrait.jpg",
+  "photos": [
+    "/images/institut-cabine.jpeg",
+    "/images/institut-accueil-logo-mural.jpeg",
+    "/images/institut-devanture.jpeg"
+  ]
+}

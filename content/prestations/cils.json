@@ -1,0 +1,55 @@
+{
+  "ordre": 3,
+  "titre": "Cils",
+  "ligne": "Rehaussement, pour un regard ouvert sans extension.",
+  "imageCarte": "/images/prestation-rehaussement-cils.jpeg",
+  "label": "Cils",
+  "h1": "Rehaussement de cils à Rouen",
+  "accroche": "Un regard ouvert à partir de vos cils, sans extension et sans entretien quotidien.",
+  "image": "/images/prestation-rehaussement-cils.jpeg",
+  "quoi": "Le rehaussement redresse le cil naturel à sa base et le fixe dans cette position. Il n'ajoute rien : il révèle la longueur existante. Le soin dure environ une heure et se tient en moyenne de quatre à huit semaines, selon le cycle de vos cils.",
+  "options": [
+    {
+      "t": "Déroulement",
+      "d": "Yeux fermés, cils positionnés sur un bigoudi souple, produits posés par temps courts, puis soin nourrissant."
+    },
+    {
+      "t": "Tenue",
+      "d": "Quatre à huit semaines en moyenne, le temps du renouvellement naturel du cil."
+    },
+    {
+      "t": "Après le soin",
+      "d": "Pendant 24 heures : éviter l'eau, le sport et le maquillage des yeux."
+    }
+  ],
+  "tarifsTitre": "Rehaussement et teinture",
+  "tarifs": [
+    {
+      "label": "Rehaussement de cils",
+      "detail": "environ 1 h",
+      "prix": 55
+    },
+    {
+      "label": "Rehaussement + teinture",
+      "prix": 65
+    }
+  ],
+  "precautions": [
+    "Pas de rehaussement en cas de conjonctivite, d’orgelet ou d’irritation oculaire.",
+    "Prévenir en cas de port de lentilles : elles se retirent avant la séance.",
+    "Un test est réalisé avant la teinture en cas d’œil sensible."
+  ],
+  "footnote": "Le résultat dépend de la longueur et de l'implantation naturelles des cils.",
+  "faq": [
+    {
+      "q": "Peut-on se maquiller après ?",
+      "a": "Pas pendant les 24 premières heures. Ensuite, le mascara est possible, sans démaquillant huileux."
+    },
+    {
+      "q": "Est-ce que cela abîme le cil ?",
+      "a": "Le soin sollicite le cil : on l'espace en fonction de sa tenue et on applique un soin nourrissant en fin de séance."
+    }
+  ],
+  "seoTitle": "Rehaussement de cils à Rouen",
+  "seoDescription": "Rehaussement de cils à Rouen : un regard ouvert à partir de vos cils, sans extension. Déroulement, tenue, tarifs et précautions chez Beauty Green Institut."
+}

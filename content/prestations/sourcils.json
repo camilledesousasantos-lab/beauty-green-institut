@@ -1,0 +1,66 @@
+{
+  "ordre": 4,
+  "titre": "Sourcils",
+  "ligne": "Brow Lift, restructuration et teinture.",
+  "imageCarte": "/images/prestation-brow-lift.jpeg",
+  "label": "Sourcils",
+  "h1": "Sourcils et Brow Lift à Rouen",
+  "accroche": "Redessiner la ligne naturelle du sourcil, sans la transformer.",
+  "image": "/images/prestation-brow-lift.jpeg",
+  "quoi": "Le travail des sourcils part de votre implantation, pas d'une forme à la mode. Restructuration pour dégager la ligne, teinture pour densifier le regard, Brow Lift pour discipliner et relever le poil : les prestations se combinent selon ce que le sourcil permet.",
+  "options": [
+    {
+      "t": "Restructuration",
+      "d": "Épilation et remise en forme à partir de l'implantation naturelle. Environ 20 minutes."
+    },
+    {
+      "t": "Teinture",
+      "d": "Coloration douce des poils et du duvet pour densifier la ligne. Tenue de deux à trois semaines."
+    },
+    {
+      "t": "Brow Lift",
+      "d": "Les poils sont relevés et fixés dans le sens de la pousse pour un sourcil plus ouvert. Tenue moyenne de quatre à six semaines."
+    }
+  ],
+  "tarifsTitre": "Prestations et combinaisons",
+  "tarifsNote": "Les prestations se combinent : la teinture seule ne comprend pas la restructuration.",
+  "tarifs": [
+    {
+      "label": "Restructuration",
+      "prix": 18
+    },
+    {
+      "label": "Teinture",
+      "prix": 18
+    },
+    {
+      "label": "Restructuration + teinture",
+      "prix": 30
+    },
+    {
+      "label": "Brow Lift + restructuration",
+      "prix": 60
+    },
+    {
+      "label": "Brow Lift + restructuration + teinture",
+      "prix": 73
+    }
+  ],
+  "precautions": [
+    "Pas de Brow Lift sur une peau irritée ou une zone récemment épilée à la cire.",
+    "Un test de teinture est réalisé en cas de peau réactive ou de première venue.",
+    "Éviter sauna, hammam et gommage du contour de l’œil pendant 24 heures."
+  ],
+  "faq": [
+    {
+      "q": "Combien de temps tient un Brow Lift ?",
+      "a": "En moyenne quatre à six semaines, selon la nature du poil et les soins apportés à la maison."
+    },
+    {
+      "q": "Faut-il laisser pousser avant le rendez-vous ?",
+      "a": "Oui, une dizaine de jours de repousse permettent de redessiner une ligne juste."
+    }
+  ],
+  "seoTitle": "Sourcils et Brow Lift à Rouen",
+  "seoDescription": "Brow Lift, restructuration et teinture des sourcils à Rouen, à partir de votre implantation naturelle. Prestations, combinaisons, tarifs et précautions."
+}

@@ -1,0 +1,61 @@
+{
+  "ordre": 2,
+  "titre": "Soins visage",
+  "ligne": "Microneedling et BBglow, toujours avec photothérapie LED.",
+  "imageCarte": "/images/institut-cabine.jpeg",
+  "label": "Soins visage",
+  "h1": "Soins visage à Rouen",
+  "accroche": "Microneedling et BBglow, toujours accompagnés d'une photothérapie par lumière LED.",
+  "image": "/images/institut-cabine.jpeg",
+  "quoi": "Les soins visage se pratiquent en cabine, sur environ 45 minutes. Le microneedling travaille la texture de la peau ; le BBglow vise l'hydratation et l'éclat. Chaque séance se termine par une photothérapie par lumière LED. Le nombre de séances dépend de la peau et de la problématique : rien n'est annoncé à l'avance.",
+  "options": [
+    {
+      "t": "Microneedling",
+      "d": "Travail de la texture de peau, de l'apparence des rides et ridules, et de certaines cicatrices dans le cadre de protocoles adaptés."
+    },
+    {
+      "t": "BBglow",
+      "d": "Hydratation intense, éclat, grain de peau plus fin et apparence des pores diminuée. En séance ponctuelle ou en cure."
+    },
+    {
+      "t": "Photothérapie LED",
+      "d": "Incluse dans chaque soin visage, en fin de séance."
+    }
+  ],
+  "tarifsTitre": "Les trois soins",
+  "tarifs": [
+    {
+      "label": "Microneedling + Photothérapie par lumière LED",
+      "detail": "environ 45 min",
+      "prix": 90
+    },
+    {
+      "label": "BBglow + Photothérapie par lumière LED",
+      "detail": "environ 45 min",
+      "prix": 90
+    },
+    {
+      "label": "Microneedling + BBglow + Photothérapie par lumière LED",
+      "prix": 160
+    }
+  ],
+  "precautions": [
+    "Peaux très sensibles ou réactives : on adapte le protocole, parfois on renonce.",
+    "Pas de soin sur une peau lésée, une poussée inflammatoire ou un coup de soleil.",
+    "Pas d'exposition solaire ni de gommage dans les jours qui suivent.",
+    "Prévenir en cas de grossesse, allaitement ou traitement dermatologique en cours."
+  ],
+  "footnote": "Les résultats varient selon la peau et la problématique. Le nombre de séances est estimé au fil du suivi, jamais fixé à l'avance.",
+  "faq": [
+    {
+      "q": "Combien de séances faut-il ?",
+      "a": "Cela dépend de la problématique et de la peau. On évalue ensemble après les premières séances."
+    },
+    {
+      "q": "La peau rougit-elle après ?",
+      "a": "Des rougeurs discrètes peuvent apparaître quelques heures après un microneedling. Elles s'estompent généralement dans la journée."
+    }
+  ],
+  "seoTitle": "Soins visage à Rouen : microneedling et BBglow",
+  "seoDescription": "Microneedling et BBglow à Rouen, toujours avec une photothérapie par lumière LED. Déroulement, tarifs et précautions des soins visage de Beauty Green Institut."
+}

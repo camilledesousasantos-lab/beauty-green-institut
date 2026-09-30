@@ -1,0 +1,276 @@
+{
+  "desktop": {
+    "640671e0-0632-42eb-979a-e39e9d7fd6ee": {
+      "mime": "text/javascript",
+      "size": 109931,
+      "role": "vendor:react",
+      "sha256_12": "28348fef6cb0"
+    },
+    "ab289b69-edee-416f-8411-e19a43b88913": {
+      "mime": "text/javascript",
+      "size": 1080227,
+      "role": "vendor:react-dom",
+      "sha256_12": "f9044a5e9c39"
+    },
+    "0e72044f-f925-4c61-afbf-be0acc30ed7f": {
+      "mime": "text/javascript",
+      "size": 3137752,
+      "role": "vendor:babel",
+      "sha256_12": "2623a9e22809"
+    },
+    "502f64c6-1038-4031-a34f-71bff111c65f": {
+      "mime": "application/javascript",
+      "size": 6082,
+      "role": "module:shared",
+      "sha256_12": "6079c61d10bd"
+    },
+    "46bfe6d8-b986-46e3-ab22-120c035dad43": {
+      "mime": "application/javascript",
+      "size": 5985,
+      "role": "module:home-desktop",
+      "sha256_12": "61ef2eb7a0fd"
+    },
+    "a3e4516a-029f-410a-8c54-3ea0d60b0b9b": {
+      "mime": "application/javascript",
+      "size": 6072,
+      "role": "module:prestation-page",
+      "sha256_12": "4a58c4d4af46"
+    },
+    "75f51f22-316f-4af0-8a36-0b1d0faca8d4": {
+      "mime": "application/javascript",
+      "size": 17239,
+      "role": "content",
+      "sha256_12": "b855ae63b456"
+    },
+    "f9415ac3-b8e7-475b-b6da-dcfb4e99d407": {
+      "mime": "application/javascript",
+      "size": 6885,
+      "role": "module:journal-pages",
+      "sha256_12": "e79ba332ef2c"
+    },
+    "6dade283-1336-4465-ada9-a0ecef08105c": {
+      "mime": "application/javascript",
+      "size": 9602,
+      "role": "module:other-pages",
+      "sha256_12": "5fb00f72a3c4"
+    },
+    "9f13cf42-9418-4a12-8e1c-39a8bf4793d0": {
+      "mime": "application/javascript",
+      "size": 1406088,
+      "role": "images",
+      "sha256_12": "16aadecfa81f"
+    },
+    "dadaa300-42e6-438e-88f5-e18b3a9a44db": {
+      "mime": "application/javascript",
+      "size": 1520770,
+      "role": "design-system",
+      "sha256_12": "f50a63a8e4ef"
+    },
+    "626d58bd-97d5-442f-926a-a5a44c3967e9": {
+      "mime": "font/woff2",
+      "size": 13240,
+      "role": "font",
+      "sha256_12": "5a621c5598a3"
+    },
+    "7d7b28cc-f4ec-460e-90ae-98bea51e2c86": {
+      "mime": "font/woff2",
+      "size": 32608,
+      "role": "font",
+      "sha256_12": "ff4f17d21930"
+    },
+    "75cf2519-ac21-46cb-9674-558831612066": {
+      "mime": "font/woff2",
+      "size": 34928,
+      "role": "font",
+      "sha256_12": "8f704806dbed"
+    },
+    "432f318c-4a9f-4e9e-942c-fae534b91399": {
+      "mime": "font/woff2",
+      "size": 25184,
+      "role": "font",
+      "sha256_12": "ae25de0507a4"
+    },
+    "0cfe67ab-3c0b-4faf-a061-893340f7f6ed": {
+      "mime": "font/woff2",
+      "size": 21300,
+      "role": "font",
+      "sha256_12": "cb13c04533ee"
+    },
+    "47770108-610d-4e1b-9e99-1dd7db20ce11": {
+      "mime": "font/woff2",
+      "size": 11516,
+      "role": "font",
+      "sha256_12": "b8ecb4ae898c"
+    },
+    "08399583-4aba-452f-884e-2643d2d681f1": {
+      "mime": "font/woff2",
+      "size": 34392,
+      "role": "font",
+      "sha256_12": "cd5bf126b2c8"
+    },
+    "fe7c4b90-5d2e-4cb0-bfac-69c722b4cc4f": {
+      "mime": "font/woff2",
+      "size": 39260,
+      "role": "font",
+      "sha256_12": "6f2f5c3b1abc"
+    },
+    "40992c75-522e-4e59-a3c9-1840051b7830": {
+      "mime": "font/woff2",
+      "size": 23416,
+      "role": "font",
+      "sha256_12": "a4d7cf345b80"
+    },
+    "9d7d49e8-4af3-448c-8720-955eaf0876af": {
+      "mime": "font/woff2",
+      "size": 21168,
+      "role": "font",
+      "sha256_12": "017fab69b4be"
+    },
+    "081a9f24-40fd-4c6a-98e4-000c8f22a38c": {
+      "mime": "font/woff2",
+      "size": 11220,
+      "role": "font",
+      "sha256_12": "6252e819a766"
+    },
+    "810700f4-b786-498e-b2a8-f3a8b1f42b3c": {
+      "mime": "font/woff2",
+      "size": 33736,
+      "role": "font",
+      "sha256_12": "cfa9a397d86f"
+    },
+    "5fec3624-80e6-428a-807e-bc2cf86002ed": {
+      "mime": "font/woff2",
+      "size": 37640,
+      "role": "font",
+      "sha256_12": "d80df8ff5aec"
+    }
+  },
+  "mobile": {
+    "adf0b162-1f4b-45eb-abeb-eba3c0085134": {
+      "mime": "text/javascript",
+      "size": 109931,
+      "role": "vendor:react",
+      "sha256_12": "28348fef6cb0"
+    },
+    "a1ae9f9b-4a6b-4d84-97df-4792b297fe5f": {
+      "mime": "text/javascript",
+      "size": 1080227,
+      "role": "vendor:react-dom",
+      "sha256_12": "f9044a5e9c39"
+    },
+    "da8fba93-4afc-4af5-84c2-71c804b11b8a": {
+      "mime": "text/javascript",
+      "size": 3137752,
+      "role": "vendor:babel",
+      "sha256_12": "2623a9e22809"
+    },
+    "d71fd734-e90d-410e-b067-f6e3ffd2eb4f": {
+      "mime": "application/javascript",
+      "size": 17239,
+      "role": "content",
+      "sha256_12": "b855ae63b456"
+    },
+    "a1201062-b255-4fcf-82f8-72addeea1d7f": {
+      "mime": "application/javascript",
+      "size": 8537,
+      "role": "module:mobile-screens",
+      "sha256_12": "6b32a06a6729"
+    },
+    "400c90df-fb27-4538-b948-365316349bc5": {
+      "mime": "application/javascript",
+      "size": 6082,
+      "role": "module:shared",
+      "sha256_12": "6079c61d10bd"
+    },
+    "b61bc631-78c0-41ad-b3f5-a24ffe68b5eb": {
+      "mime": "application/javascript",
+      "size": 1406088,
+      "role": "images",
+      "sha256_12": "16aadecfa81f"
+    },
+    "44c51263-0214-44d7-96ce-09f3b668d07d": {
+      "mime": "application/javascript",
+      "size": 1520770,
+      "role": "design-system",
+      "sha256_12": "f50a63a8e4ef"
+    },
+    "279c7297-67c6-4ca2-867d-fe0bf1fa1027": {
+      "mime": "font/woff2",
+      "size": 13240,
+      "role": "font",
+      "sha256_12": "5a621c5598a3"
+    },
+    "3b095666-3805-4411-8c33-169ef9ee5b7a": {
+      "mime": "font/woff2",
+      "size": 32608,
+      "role": "font",
+      "sha256_12": "ff4f17d21930"
+    },
+    "c9573e2a-500a-4bcc-a043-4cdcaf1925e6": {
+      "mime": "font/woff2",
+      "size": 34928,
+      "role": "font",
+      "sha256_12": "8f704806dbed"
+    },
+    "e60c35ae-c700-4247-90be-61d91ed3f5d3": {
+      "mime": "font/woff2",
+      "size": 25184,
+      "role": "font",
+      "sha256_12": "ae25de0507a4"
+    },
+    "c2d40cc7-d99b-4c3c-8e49-c1a49da44ebd": {
+      "mime": "font/woff2",
+      "size": 21300,
+      "role": "font",
+      "sha256_12": "cb13c04533ee"
+    },
+    "8e7f1730-4503-4d2e-bf74-463d0fc31102": {
+      "mime": "font/woff2",
+      "size": 11516,
+      "role": "font",
+      "sha256_12": "b8ecb4ae898c"
+    },
+    "b9103f3f-9376-41b5-b0cf-3d3633dec5f7": {
+      "mime": "font/woff2",
+      "size": 34392,
+      "role": "font",
+      "sha256_12": "cd5bf126b2c8"
+    },
+    "8de16c34-dbac-46ff-8853-928931071183": {
+      "mime": "font/woff2",
+      "size": 39260,
+      "role": "font",
+      "sha256_12": "6f2f5c3b1abc"
+    },
+    "834bc8a3-c7c4-4ec1-b79d-6093df43b251": {
+      "mime": "font/woff2",
+      "size": 23416,
+      "role": "font",
+      "sha256_12": "a4d7cf345b80"
+    },
+    "cad5552e-72a3-46fa-a641-942e33ac421c": {
+      "mime": "font/woff2",
+      "size": 21168,
+      "role": "font",
+      "sha256_12": "017fab69b4be"
+    },
+    "bf328d0d-e6fb-4e89-9a2f-80765d598939": {
+      "mime": "font/woff2",
+      "size": 11220,
+      "role": "font",
+      "sha256_12": "6252e819a766"
+    },
+    "cc0f6886-5622-4298-9c37-504138173bc2": {
+      "mime": "font/woff2",
+      "size": 33736,
+      "role": "font",
+      "sha256_12": "cfa9a397d86f"
+    },
+    "f01565bd-7cb9-41f1-b798-5a70cb0f99f2": {
+      "mime": "font/woff2",
+      "size": 37640,
+      "role": "font",
+      "sha256_12": "d80df8ff5aec"
+    }
+  }
+}

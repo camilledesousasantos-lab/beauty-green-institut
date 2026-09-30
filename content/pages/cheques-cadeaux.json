@@ -1,0 +1,10 @@
+{
+  "label": "Chèques cadeaux",
+  "h1": "Offrir un moment pour soi",
+  "intro": "Le chèque cadeau Beauty Green est valable un an sur toutes les prestations de l'institut. Il peut être utilisé en plusieurs fois, jusqu'à épuisement du solde.",
+  "montants": ["50 €", "75 €", "100 €", "150 €", "Montant libre"],
+  "note": "Valable un an, sur toutes les prestations, utilisable en plusieurs fois jusqu'à épuisement du solde.",
+  "commanderTitre": "Commander un chèque cadeau",
+  "commanderTexte": "Pour offrir un chèque cadeau, contactez l'institut au 07 86 66 87 99 ou passez nous voir, 8 rue Anatole France à Rouen.",
+  "bientot": "L'achat en ligne du chèque cadeau, avec envoi automatique par email, sera disponible prochainement."
+}
