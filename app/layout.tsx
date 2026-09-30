@@ -1,25 +1,10 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
-import { Archivo, Cormorant_Garamond } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { robotsMetadata, siteBaseUrl } from "@/lib/seo";
+import { fontVariables } from "./fonts";
 import "./globals.css";
-
-const cormorant = Cormorant_Garamond({
-  weight: ["500", "600"],
-  style: ["normal", "italic"],
-  subsets: ["latin", "latin-ext"],
-  display: "swap",
-  variable: "--font-cormorant",
-});
-
-const archivo = Archivo({
-  weight: ["300", "400", "500", "600"],
-  subsets: ["latin", "latin-ext"],
-  display: "swap",
-  variable: "--font-archivo",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteBaseUrl()),
@@ -44,7 +29,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="fr" className={`${cormorant.variable} ${archivo.variable}`}>
+    <html lang="fr" className={fontVariables}>
       <body className="bg-ecru pb-[calc(92px+env(safe-area-inset-bottom))] font-sans text-brun antialiased lg:pb-0">
         <SiteHeader />
         <main>{children}</main>

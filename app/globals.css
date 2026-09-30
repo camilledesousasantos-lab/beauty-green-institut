@@ -147,8 +147,12 @@
     var(--dur-fast) var(--ease-soft); /* @kind other */
 }
 
-/* next/font self-hosts the families under hashed names: point the DS variables at them. */
+/* next/font self-hosts the families under hashed names (app/fonts.ts, one face per subset):
+   point the DS variables at them — latin-ext first, it carries no generated fallback. */
 :root {
+  --font-archivo: var(--font-archivo-latin-ext), var(--font-archivo-latin);
+  --font-cormorant:
+    var(--font-cormorant-latin-ext), var(--font-cormorant-latin);
   --font-serif-display: var(--font-cormorant), Georgia, serif;
   --font-serif-text: var(--font-cormorant), Georgia, serif;
   --font-sans: var(--font-archivo), "Helvetica Neue", Arial, sans-serif;
