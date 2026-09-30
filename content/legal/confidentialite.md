@@ -8,7 +8,7 @@ Le site ne propose ni compte, ni formulaire, ni lettre d'information. Il ne vous
 
 ## Mesure d'audience
 
-Pour savoir quelles pages sont consultées, le site utilise **Vercel Web Analytics**, sans cookie tiers. Les visites sont comptées à partir d'un identifiant haché, calculé à partir de la requête et effacé au bout de 24 heures. Les données recueillies sont anonymes : elles ne sont rattachées à aucune personne ni à aucune adresse IP.
+Pour savoir quelles pages sont consultées, le site utilise **Vercel Web Analytics**, sans cookie tiers. Les visites sont comptées à partir d'un identifiant haché, calculé à partir de la requête et effacé au bout de 24 heures. Les données recueillies (page consultée, site de provenance, pays et ville, type d'appareil, système et navigateur) sont anonymes : elles ne sont rattachées à aucune personne ni à aucune adresse IP et servent uniquement à des statistiques globales.
 
 ## Hébergement
 
