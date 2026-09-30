@@ -2,7 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    # autopilot/**: a run branch is judged by CI before its merge, without opening a pull request
+    # on the client's repository.
+    branches: [main, "autopilot/**"]
   pull_request:
 
 permissions:
