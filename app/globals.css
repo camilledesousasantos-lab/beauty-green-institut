@@ -247,9 +247,11 @@
     scroll-margin-top: 96px;
   }
   @media (prefers-reduced-motion: reduce) {
-    /* biome-ignore lint/complexity/noImportantStyles: reduced motion must beat every utility transition */
+    /* Reduced motion must beat every utility transition. */
     * {
+      /* biome-ignore lint/complexity/noImportantStyles: reduced motion wins over any utility */
       animation: none !important;
+      /* biome-ignore lint/complexity/noImportantStyles: reduced motion wins over any utility */
       transition: none !important;
     }
   }
