@@ -12,7 +12,7 @@ Pour savoir quelles pages sont consultées, le site utilise **Vercel Web Analyti
 
 ## Hébergement
 
-Le site est hébergé par Vercel Inc. (États-Unis), qui traite les données techniques nécessaires à son affichage. Sa politique de confidentialité : https://vercel.com/legal/privacy-policy
+Le site est hébergé par Vercel Inc. (États-Unis), qui traite les données techniques nécessaires à son affichage. Sa politique de confidentialité : <https://vercel.com/legal/privacy-policy>
 
 ## Prise de rendez-vous et Instagram
 
@@ -20,4 +20,4 @@ Les boutons « Prendre rendez-vous » mènent à Planity, et le lien Instagram a
 
 ## Vos droits
 
-Pour toute question sur vos données personnelles, ou pour exercer vos droits d'accès, de rectification ou d'effacement, contactez l'institut au 07 86 66 87 99 ou à l'adresse email indiquée dans les [mentions légales](/mentions-legales). Vous pouvez aussi adresser une réclamation à la CNIL (https://www.cnil.fr).
+Pour toute question sur vos données personnelles, ou pour exercer vos droits d'accès, de rectification ou d'effacement, contactez l'institut au 07 86 66 87 99 ou à l'adresse email indiquée dans les [mentions légales](/mentions-legales). Vous pouvez aussi adresser une réclamation à la CNIL (<https://www.cnil.fr>).

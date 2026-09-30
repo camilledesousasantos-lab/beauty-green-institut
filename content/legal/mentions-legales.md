@@ -15,7 +15,7 @@ Directrice de la publication : Camille De Sousa Santos.
 
 ## Hébergement
 
-Le site est hébergé par **Vercel Inc.**, 440 N Barranca Avenue #4133, Covina, CA 91723, United States — https://vercel.com/help
+Le site est hébergé par **Vercel Inc.**, 440 N Barranca Avenue #4133, Covina, CA 91723, United States — <https://vercel.com/help>
 
 ## Propriété intellectuelle
 

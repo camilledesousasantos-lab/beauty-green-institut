@@ -162,4 +162,95 @@
   --color-brun: #2e2925;
   --color-vert: #65705f;
   --color-blanc-casse: #faf9f6;
+
+  /* DS derived tones (charte §3: only transparencies of the brun and the vert). */
+  --color-brun-80: var(--brun-80);
+  --color-brun-60: var(--brun-60);
+  --color-brun-30: var(--brun-30);
+  --color-brun-14: var(--brun-14);
+  --color-vert-40: var(--vert-40);
+
+  /* DS type scale — desktop (1440) and mobile (-m, 390), each with its own leading so a
+     utility never leaves the line-height unset. */
+  --text-display: var(--fs-display);
+  --text-display--line-height: var(--lh-display);
+  --text-h1: var(--fs-h1);
+  --text-h1--line-height: 1.08;
+  --text-h2: var(--fs-h2);
+  --text-h2--line-height: var(--lh-heading);
+  --text-h3: var(--fs-h3);
+  --text-h3--line-height: 1.1;
+  --text-lede: var(--fs-lede);
+  --text-lede--line-height: var(--lh-lede);
+  --text-body: var(--fs-body);
+  --text-body--line-height: var(--lh-body);
+  --text-body-sm: var(--fs-body-sm);
+  --text-body-sm--line-height: 1.7;
+  --text-caption: var(--fs-caption);
+  --text-caption--line-height: 1.6;
+  --text-label: var(--fs-label);
+  --text-label--line-height: 1.4;
+  --text-price: var(--fs-price);
+  --text-price--line-height: 1.4;
+  --text-display-m: var(--fs-display-m);
+  --text-display-m--line-height: 1.05;
+  --text-h1-m: var(--fs-h1-m);
+  --text-h1-m--line-height: 1.08;
+  --text-h2-m: var(--fs-h2-m);
+  --text-h2-m--line-height: var(--lh-heading);
+  --text-h3-m: var(--fs-h3-m);
+  --text-h3-m--line-height: 1.12;
+  --text-lede-m: var(--fs-lede-m);
+  --text-lede-m--line-height: 1.55;
+
+  --tracking-label: var(--ls-label);
+  --tracking-button: var(--ls-button);
+}
+
+/* Base elements — the template of the mock, verbatim in intent. */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--surface-page);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-sans-light);
+    line-height: var(--lh-body);
+    -webkit-font-smoothing: antialiased;
+    text-wrap: pretty;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif-display);
+    font-weight: var(--fw-serif);
+    letter-spacing: var(--ls-heading);
+    line-height: var(--lh-heading);
+  }
+  h1 {
+    font-weight: var(--fw-serif-display);
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition-hover);
+  }
+  :focus-visible {
+    outline: 1px solid var(--focus-ring);
+    outline-offset: 3px;
+  }
+  /* An in-page jump never lands under the sticky header. */
+  [id] {
+    scroll-margin-top: 96px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    /* biome-ignore lint/complexity/noImportantStyles: reduced motion must beat every utility transition */
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
 }

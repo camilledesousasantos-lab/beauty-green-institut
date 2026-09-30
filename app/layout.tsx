@@ -1,6 +1,8 @@
 import { Analytics } from "@vercel/analytics/next";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Archivo, Cormorant_Garamond } from "next/font/google";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
 import { robotsMetadata, siteBaseUrl } from "@/lib/seo";
 import "./globals.css";
 
@@ -32,13 +34,21 @@ export const metadata: Metadata = {
   robots: robotsMetadata(),
 };
 
+// viewport-fit=cover: the fixed booking bar sits above the iPhone home indicator (safe-area inset).
+export const viewport: Viewport = {
+  viewportFit: "cover",
+  themeColor: "#f3efe8",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr" className={`${cormorant.variable} ${archivo.variable}`}>
-      <body className="bg-ecru text-brun font-sans antialiased">
-        {children}
+      <body className="bg-ecru pb-[calc(92px+env(safe-area-inset-bottom))] font-sans text-brun antialiased lg:pb-0">
+        <SiteHeader />
+        <main>{children}</main>
+        <SiteFooter />
         <Analytics />
       </body>
     </html>
