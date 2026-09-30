@@ -8,7 +8,7 @@ export function UniverseCard({
   title,
   line,
   image,
-  ratio = "4 / 5",
+  aspect = "aspect-[3/2] lg:aspect-[4/5]",
   sizes,
 }: {
   href: string;
@@ -16,12 +16,13 @@ export function UniverseCard({
   title: string;
   line: string;
   image: string;
-  ratio?: string;
+  /** Tailwind aspect classes: 3/2 on a phone, 4/5 at 1440 (HomeMobile / HomeDesktop). */
+  aspect?: string;
   sizes: string;
 }) {
   return (
     <Link href={href} className="group block text-brun">
-      <Photo src={image} ratio={ratio} sizes={sizes} />
+      <Photo src={image} sizes={sizes} className={aspect} />
       <div className="flex flex-col gap-2 pt-5">
         <span className="font-sans text-label tracking-label text-vert">
           {index}

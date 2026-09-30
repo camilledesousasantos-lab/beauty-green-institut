@@ -34,7 +34,7 @@ export interface Accueil {
   accroche: string;
   intro: string;
   hero: { image: string; alt: string };
-  institut: { titre: string; texte: string };
+  institut: { titre: string; texte: string; image: string };
   instagram: { titre: string; photos: string[] };
 }
 
@@ -112,6 +112,7 @@ export interface FormationsPage {
   h1: string;
   statut: string;
   intro: string;
+  image: string;
   apreparer: string[];
   contact: string;
   note: string;
@@ -263,7 +264,7 @@ const SCHEMAS = {
     accroche: text,
     intro: text,
     hero: object({ image: text, alt: text }),
-    institut: object({ titre: text, texte: text }),
+    institut: object({ titre: text, texte: text, image: text }),
     // The editor enforces exactly 6; the site renders what exists so a removed photo never
     // freezes a deployment.
     instagram: object({ titre: text, photos: list(text, { min: 1, max: 6 }) }),
@@ -322,6 +323,7 @@ const SCHEMAS = {
     h1: text,
     statut: text,
     intro: text,
+    image: text,
     apreparer: list(text),
     contact: text,
     note: text,
@@ -425,5 +427,5 @@ export const getPrestation = (slug: string) =>
 export const getLegal = (name: "mentions-legales" | "confidentialite") =>
   readMarkdown(`legal/${name}.md`) as LegalPage;
 
-/** `32` → `32 €` with the narrow no-break space French typography uses before the sign. */
-export const formatPrix = (prix: number) => `${prix} €`;
+/** `32` → `32 €`; the space is unbreakable (a price never splits across two lines). */
+export const formatPrix = (prix: number) => `${prix}\u00a0€`;

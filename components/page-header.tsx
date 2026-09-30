@@ -27,7 +27,7 @@ export function PageHeader({
       <Container className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-20">
         <div className="pb-7 lg:pb-0">
           <SectionLabel className="mb-4 lg:mb-6">{label}</SectionLabel>
-          <h1 className="max-w-[12ch] text-[37px] leading-[1.08] lg:text-h1">
+          <h1 className="text-[37px] leading-[1.08] lg:max-w-[12ch] lg:text-h1">
             {h1}
           </h1>
           <p className="mt-[18px] max-w-[54ch] font-serif text-lede-m font-medium text-brun-80 lg:mt-7 lg:text-lede">

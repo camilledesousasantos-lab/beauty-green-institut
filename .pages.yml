@@ -88,6 +88,11 @@ content:
         fields:
           - { name: titre, label: Titre, type: string, required: true }
           - { name: texte, label: Texte, type: text, required: true }
+          - name: image
+            label: Photo
+            type: image
+            required: true
+            description: "JPEG, 1600 px de large au maximum, 500 Ko au maximum."
       - name: instagram
         label: Bloc Instagram
         type: object
@@ -250,6 +255,11 @@ content:
       - { name: h1, label: Titre de la page, type: string, required: true }
       - { name: statut, label: Statut (pastille), type: string, required: true }
       - { name: intro, label: Introduction, type: text, required: true }
+      - name: image
+        label: Photo
+        type: image
+        required: true
+        description: "JPEG, 1600 px de large au maximum, 500 Ko au maximum."
       - { name: apreparer, label: « À venir sur cette page », type: string, list: true, required: true }
       - { name: contact, label: Phrase de contact, type: string, required: true }
       - { name: note, label: Note, type: string, required: true }

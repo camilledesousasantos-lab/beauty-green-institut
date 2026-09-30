@@ -28,39 +28,42 @@ export function SiteHeader() {
               wordmarkClassName="hidden xl:inline"
             />
           </Link>
-          <nav
-            aria-label="Menu principal"
-            className="flex items-center gap-6 xl:gap-[34px]"
-          >
-            {nav.map((item) =>
-              item.children ? (
-                <div key={item.href} className="group relative">
-                  <NavLink href={item.href}>{item.label}</NavLink>
-                  <div className="invisible absolute top-full -left-5 z-50 pt-3.5 group-focus-within:visible group-hover:visible">
-                    <ul className="grid min-w-[220px] gap-3 border border-brun-14 bg-blanc-casse px-[26px] py-[18px] shadow-[var(--shadow-soft)]">
-                      {item.children.map((child) => (
-                        <li key={child.href}>
-                          <Link
-                            href={child.href}
-                            className="font-sans text-[13px] whitespace-nowrap text-brun hover:text-vert"
-                          >
-                            {child.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+          {/* The booking button sits at the end of the menu row (DS SiteHeader). */}
+          <div className="flex items-center gap-6 xl:gap-[34px]">
+            <nav
+              aria-label="Menu principal"
+              className="flex items-center gap-6 xl:gap-[34px]"
+            >
+              {nav.map((item) =>
+                item.children ? (
+                  <div key={item.href} className="group relative flex">
+                    <NavLink href={item.href}>{item.label}</NavLink>
+                    <div className="invisible absolute top-full -left-5 z-50 pt-3.5 group-focus-within:visible group-hover:visible">
+                      <ul className="grid min-w-[220px] gap-3 border border-brun-14 bg-blanc-casse px-[26px] py-[18px] shadow-[var(--shadow-soft)]">
+                        {item.children.map((child) => (
+                          <li key={child.href}>
+                            <Link
+                              href={child.href}
+                              className="font-sans text-[13px] whitespace-nowrap text-brun hover:text-vert"
+                            >
+                              {child.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              ) : (
-                <NavLink key={item.href} href={item.href}>
-                  {item.label}
-                </NavLink>
-              ),
-            )}
-          </nav>
-          <Button href={site.planity} size="sm" external>
-            Prendre rendez-vous
-          </Button>
+                ) : (
+                  <NavLink key={item.href} href={item.href}>
+                    {item.label}
+                  </NavLink>
+                ),
+              )}
+            </nav>
+            <Button href={site.planity} size="sm" external>
+              Prendre rendez-vous
+            </Button>
+          </div>
         </div>
 
         {/* Mobile */}
@@ -81,7 +84,7 @@ export function SiteHeader() {
         target="_blank"
         rel="noopener"
         data-testid="cta-mobile"
-        className="fixed inset-x-4 bottom-[calc(16px+env(safe-area-inset-bottom))] z-30 flex h-14 items-center justify-center bg-brun font-sans text-[13px] uppercase tracking-button text-ecru shadow-[var(--shadow-soft)] lg:hidden"
+        className="fixed inset-x-4 bottom-[calc(16px+env(safe-area-inset-bottom))] z-30 flex h-14 items-center justify-center border border-ecru/20 bg-brun font-sans text-[13px] uppercase tracking-button text-ecru shadow-[var(--shadow-soft)] lg:hidden"
       >
         Prendre rendez-vous
       </a>

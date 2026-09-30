@@ -18,9 +18,11 @@ export function SectionLabel({
   as?: "span" | "p" | "h2";
   className?: string;
 }) {
+  // `hidden lg:block` in className must not fight a default `block`.
+  const display = /\bhidden\b/.test(className) ? "" : "block";
   return (
     <Tag
-      className={`block font-sans text-label font-medium uppercase tracking-label ${TONES[tone]} ${className}`}
+      className={`${display} font-sans text-label font-medium uppercase tracking-label ${TONES[tone]} ${className}`}
     >
       {children}
     </Tag>
