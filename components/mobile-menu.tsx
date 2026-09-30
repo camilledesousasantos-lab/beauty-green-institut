@@ -83,7 +83,9 @@ export function MobileMenu({
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  aria-current={pathname === item.href ? "page" : undefined}
+                  aria-current={
+                    isCurrent(pathname, item.href) ? "page" : undefined
+                  }
                   className={`flex min-h-16 items-center gap-4 font-serif text-[29px] font-medium ${isCurrent(pathname, item.href) ? "text-vert" : "text-brun"}`}
                 >
                   <span className="w-[22px] font-sans text-[11px] tracking-label text-vert">
