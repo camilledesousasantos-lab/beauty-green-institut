@@ -146,7 +146,8 @@ export interface Article {
   category: string;
   image: string;
   chapo: string;
-  published: boolean;
+  /** Absent = draft (an unticked box may not be written by the editor). */
+  published?: boolean;
   body: string;
 }
 
@@ -333,7 +334,7 @@ const SCHEMAS = {
     category: text,
     image: text,
     chapo: text,
-    published: bool,
+    "published?": bool,
     body: text,
   }),
 } satisfies Record<string, Check>;

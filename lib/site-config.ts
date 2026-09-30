@@ -11,6 +11,8 @@ export const siteConfig = {
   claim: "La beauté comme un moment pour soi.",
   // Provisional Vercel URL until the domain beautygreeninstitut.com is switched over.
   url: "https://beauty-green-institut.vercel.app",
+  // The domain after the DNS switch (go-live kit): canonical base once SITE_INDEXABLE=1.
+  productionUrl: "https://beautygreeninstitut.com",
   booking: {
     label: "Prendre rendez-vous",
     // One general Planity page for every button (client decision, Q4).

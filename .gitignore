@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# delivery kit reports + regenerable mock extraction
+/playwright-report/
+/test-results/
+/design/maquette/ds/
+/design/maquette/fonts/

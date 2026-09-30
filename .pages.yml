@@ -1,0 +1,324 @@
+# Pages CMS (https://app.pagescms.org) — the editor Camille uses to change the site's content.
+# Every save is a commit on the branch opened in Pages CMS (main = the live site); Vercel then
+# redeploys in about a minute. Layout never lives here: only texts, prices, hours and photos.
+#
+# merge: true + EVERY key declared, list items included: a list edited in the editor replaces
+# the whole list, so an undeclared item key would be dropped at the first save
+# (lib/pages-config.test.ts checks every key of every content file against this schema).
+# The site re-validates each file at build (lib/content.ts): a bad save fails the Vercel build
+# and the previous version stays online.
+
+media:
+  input: public/images
+  output: /images
+  extensions: [jpg, jpeg, png, webp]
+
+settings:
+  content:
+    merge: true
+
+content:
+  # ── Site-wide ─────────────────────────────────────────────────────────────────────────────
+  - name: site
+    label: Coordonnées et horaires
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: nom, label: Nom de l'institut, type: string, required: true }
+      - name: planity
+        label: Lien de réservation Planity
+        type: string
+        required: true
+        description: Tous les boutons « Prendre rendez-vous » du site ouvrent ce lien.
+      - name: instagram
+        label: Instagram
+        type: object
+        required: true
+        fields:
+          - { name: handle, label: Nom du compte (avec @), type: string, required: true }
+          - { name: url, label: Lien du compte, type: string, required: true }
+      - { name: tel, label: Téléphone affiché, type: string, required: true }
+      - name: telHref
+        label: Téléphone pour le lien d'appel
+        type: string
+        required: true
+        description: "Au format tel:+33 suivi du numéro sans le 0 initial, par exemple tel:+33786668799."
+      - name: adresse
+        label: Adresse
+        type: object
+        required: true
+        fields:
+          - { name: rue, label: Rue, type: string, required: true }
+          - { name: cp, label: Code postal, type: string, required: true }
+          - { name: ville, label: Ville, type: string, required: true }
+      - name: horaires
+        label: Horaires (une ligne par ligne affichée)
+        type: string
+        list: true
+        required: true
+      - { name: horairesLigne, label: Horaires sur une seule ligne, type: string, required: true }
+
+  # ── Pages ─────────────────────────────────────────────────────────────────────────────────
+  - name: accueil
+    label: Page d'accueil
+    type: file
+    path: content/pages/accueil.json
+    format: json
+    fields:
+      - { name: label, label: Petit titre au-dessus du nom, type: string, required: true }
+      - { name: titre, label: Titre principal, type: string, required: true }
+      - { name: accroche, label: Phrase d'accroche, type: string, required: true }
+      - { name: intro, label: Texte de bienvenue, type: text, required: true }
+      - name: hero
+        label: Grande photo du haut
+        type: object
+        required: true
+        fields:
+          - name: image
+            label: Photo
+            type: image
+            required: true
+            description: "Photo à l'horizontale, JPEG, 1600 px de large au maximum, 500 Ko au maximum."
+          - { name: alt, label: Description de la photo (lue aux personnes malvoyantes), type: string, required: true }
+      - name: institut
+        label: Bloc « L'institut »
+        type: object
+        required: true
+        fields:
+          - { name: titre, label: Titre, type: string, required: true }
+          - { name: texte, label: Texte, type: text, required: true }
+      - name: instagram
+        label: Bloc Instagram
+        type: object
+        required: true
+        fields:
+          - { name: titre, label: Titre, type: string, required: true }
+          - name: photos
+            label: Les 6 photos
+            type: image
+            required: true
+            list: { min: 6, max: 6 }
+            description: "Photos carrées de préférence, JPEG, 1600 px de large au maximum, 500 Ko au maximum."
+
+  - name: prestations-page
+    label: Page Prestations
+    type: file
+    path: content/pages/prestations.json
+    format: json
+    fields:
+      - { name: label, label: Petit titre, type: string, required: true }
+      - { name: h1, label: Titre de la page, type: string, required: true }
+      - { name: lede, label: Texte d'introduction, type: text, required: true }
+
+  - name: prestations
+    label: Prestations
+    type: collection
+    path: content/prestations
+    format: json
+    view:
+      fields: [titre]
+      primary: titre
+    operations: { create: false, delete: false, rename: false }
+    fields:
+      - { name: ordre, type: number, hidden: true, required: true }
+      - { name: titre, label: Nom (carte de l'accueil), type: string, required: true }
+      - { name: ligne, label: Phrase de la carte, type: text, required: true }
+      - name: imageCarte
+        label: Photo de la carte
+        type: image
+        required: true
+        description: "JPEG, 1600 px de large au maximum, 500 Ko au maximum."
+      - { name: label, label: Petit titre de la page, type: string, required: true }
+      - { name: h1, label: Titre de la page, type: string, required: true }
+      - { name: accroche, label: Accroche, type: text, required: true }
+      - name: image
+        label: Photo du haut de page
+        type: image
+        required: true
+        description: "JPEG, 1600 px de large au maximum, 500 Ko au maximum."
+      - { name: imagePosition, type: string, hidden: true }
+      - name: proof
+        label: Petite photo d'exemple (facultative)
+        type: image
+        description: "Affichée en petit (240 px) avec sa légende. JPEG, 1600 px de large au maximum, 500 Ko au maximum."
+      - { name: proofCaption, label: Légende de la petite photo, type: string }
+      - { name: quoi, label: « Qu'est-ce que c'est » — texte principal, type: text, required: true }
+      - { name: quoi2, label: « Qu'est-ce que c'est » — texte complémentaire, type: text }
+      - { name: zones, label: Zones traitées, type: string, list: true }
+      - name: blocs
+        label: Blocs d'information (sur 2 colonnes)
+        type: object
+        list: true
+        fields:
+          - { name: t, label: Titre, type: string, required: true }
+          - { name: d, label: Texte, type: text, required: true }
+      - name: options
+        label: Blocs d'information (sur 3 colonnes)
+        type: object
+        list: true
+        fields:
+          - { name: t, label: Titre, type: string, required: true }
+          - { name: d, label: Texte, type: text, required: true }
+      - name: bilan
+        label: Premier rendez-vous (bilan)
+        type: object
+        fields:
+          - { name: titre, label: Titre, type: string, required: true }
+          - { name: texte, label: Texte, type: text, required: true }
+          - { name: prix, label: Prix en euros (chiffre seul), type: number, required: true, options: { min: 0 } }
+          - { name: mention, label: Mention sous le prix, type: string, required: true }
+      - { name: tarifsTitre, label: Titre des tarifs, type: string, required: true }
+      - { name: tarifsNote, label: Note sous les tarifs, type: text }
+      - name: tarifs
+        label: Tarifs
+        type: object
+        list: true
+        required: true
+        fields:
+          - { name: label, label: Prestation, type: string, required: true }
+          - { name: detail, label: Précision (durée…), type: string }
+          - { name: prix, label: Prix en euros (chiffre seul), type: number, required: true, options: { min: 0 } }
+      - { name: precautionsIntro, label: Introduction des précautions, type: text }
+      - name: precautions
+        label: Précautions et contre-indications
+        type: text
+        list: true
+        required: true
+      - { name: footnote, label: Note sous les précautions, type: text }
+      - { name: apres, label: Les 24 heures qui suivent, type: text, list: true }
+      - name: faq
+        label: Questions fréquentes
+        type: object
+        list: true
+        required: true
+        fields:
+          - { name: q, label: Question, type: string, required: true }
+          - { name: a, label: Réponse, type: text, required: true }
+      - { name: seoTitle, type: string, hidden: true, required: true }
+      - { name: seoDescription, type: text, hidden: true, required: true }
+
+  - name: institut
+    label: Page L'Institut
+    type: file
+    path: content/pages/institut.json
+    format: json
+    fields:
+      - { name: label, label: Petit titre, type: string, required: true }
+      - { name: h1, label: Titre de la page, type: string, required: true }
+      - name: texte
+        label: Texte de présentation (un paragraphe par élément)
+        type: text
+        list: true
+        required: true
+      - { name: signature, label: Signature, type: string, required: true }
+      - { name: valeurs, label: Valeurs, type: string, list: true, required: true }
+      - name: portrait
+        label: Portrait
+        type: image
+        required: true
+        description: "Toujours affiché en petit médaillon rond. JPEG, 1600 px de large au maximum, 500 Ko au maximum."
+      - name: photos
+        label: Photos (1 en haut de page, puis les 2 du bas)
+        type: image
+        required: true
+        list: { min: 3, max: 3 }
+        description: "JPEG, 1600 px de large au maximum, 500 Ko au maximum."
+
+  - name: cheques-cadeaux
+    label: Page Chèques cadeaux
+    type: file
+    path: content/pages/cheques-cadeaux.json
+    format: json
+    fields:
+      - { name: label, label: Petit titre, type: string, required: true }
+      - { name: h1, label: Titre de la page, type: string, required: true }
+      - { name: intro, label: Introduction, type: text, required: true }
+      - { name: montants, label: Montants, type: string, list: true, required: true }
+      - { name: note, label: Note sous les montants, type: text, required: true }
+      - { name: commanderTitre, label: Titre du bloc « Commander », type: string, required: true }
+      - { name: commanderTexte, label: Texte du bloc « Commander », type: text, required: true }
+      - { name: bientot, label: Texte « bientôt en ligne », type: text, required: true }
+
+  - name: formations
+    label: Page Formations
+    type: file
+    path: content/pages/formations.json
+    format: json
+    fields:
+      - { name: label, label: Petit titre, type: string, required: true }
+      - { name: h1, label: Titre de la page, type: string, required: true }
+      - { name: statut, label: Statut (pastille), type: string, required: true }
+      - { name: intro, label: Introduction, type: text, required: true }
+      - { name: apreparer, label: « À venir sur cette page », type: string, list: true, required: true }
+      - { name: contact, label: Phrase de contact, type: string, required: true }
+      - { name: note, label: Note, type: string, required: true }
+
+  - name: journal-page
+    label: Page Journal
+    type: file
+    path: content/pages/journal.json
+    format: json
+    fields:
+      - { name: titre, label: Titre de la page, type: string, required: true }
+      - name: vide
+        label: Texte affiché tant qu'aucun article n'est publié
+        type: text
+        required: true
+      # The filter buttons must match the article categories below: not editable here.
+      - { name: categories, type: string, list: true, hidden: true, required: true }
+
+  # ── Journal ───────────────────────────────────────────────────────────────────────────────
+  - name: journal
+    label: Journal
+    type: collection
+    path: content/journal
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [title, date, category, published]
+      primary: title
+      default: { sort: date, order: desc }
+    fields:
+      - { name: title, label: Titre, type: string, required: true }
+      - { name: date, label: Date, type: date, required: true }
+      - name: category
+        label: Univers
+        type: select
+        required: true
+        options:
+          values: [Électrolyse, Soins visage, Cils, Sourcils, Blanchiment dentaire]
+      - name: image
+        label: Photo
+        type: image
+        required: true
+        description: "Photo à l'horizontale, JPEG, 1600 px de large au maximum, 500 Ko au maximum."
+      - { name: chapo, label: Chapô (une ou deux phrases), type: text, required: true }
+      - name: published
+        label: Publié sur le site
+        type: boolean
+        description: Tant que la case n'est pas cochée, l'article reste un brouillon invisible sur le site.
+      - name: body
+        label: Texte de l'article
+        type: rich-text
+        required: true
+        options: { format: markdown }
+
+  # ── Legal pages ───────────────────────────────────────────────────────────────────────────
+  - name: legal
+    label: Pages légales
+    type: collection
+    path: content/legal
+    format: yaml-frontmatter
+    view:
+      fields: [title]
+      primary: title
+    operations: { create: false, delete: false, rename: false }
+    fields:
+      - { name: title, label: Titre, type: string, required: true }
+      - { name: updated, label: Date de mise à jour, type: date, required: true }
+      - name: body
+        label: Texte
+        type: rich-text
+        required: true
+        options: { format: markdown }

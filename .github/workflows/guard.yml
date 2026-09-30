@@ -1,0 +1,54 @@
+# Delivery kit — test guard (P2). Copy to .github/workflows/guard.yml in the project repo (Write
+# tool: the hub's bash-danger hook blocks Bash commands naming the workflows path with .yml).
+#
+# pull_request_target: GitHub runs THIS file as it is on the DEFAULT BRANCH, never the PR's copy
+# (https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#pull_request_target:
+# « This event runs in the context of the default branch of the base repository »). A PR cannot
+# skip, swallow or rewrite the step that judges it; the guard refuses an edit of this file and of
+# scripts/test-guard.mjs, so such a PR reads red and goes through « Changements de CI assumés ».
+#
+# Nothing from the PR is executed (« Avoid using this event if you need to build or run code from
+# the pull request »): no npm ci, no project script. The PR head is checked out as DATA — the
+# guard only reads git objects — and the guard that runs is the default branch's copy
+# (GUARD_REF = github.sha, « Last commit on default branch » for this event). The token is
+# read-only and not persisted. A fork PR is refused by actions/checkout v7 by default
+# (allow-unsafe-pr-checkout is deliberately NOT set): the job then fails, never green.
+#
+# BOOTSTRAP: pull_request_target only runs a workflow file that already exists on the default
+# branch. The PR that installs this file (the kit PR) is therefore the one PR the guard cannot
+# judge: it is read by hand (the recette sheet prints a red banner for any PR touching .github/
+# or the guard). From its merge on, every PR is judged from the default branch.
+# Every github.event value reaches the script through env:, never interpolated into run:.
+name: Guard
+
+on:
+  pull_request_target:
+
+permissions:
+  contents: read
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: Test guard — no deleted, skipped, diluted or weakened test
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          GUARD_REF: ${{ github.sha }}
+        run: |
+          GUARD="$RUNNER_TEMP/test-guard.mjs"
+          if ! git cat-file -e "$GUARD_REF:scripts/test-guard.mjs" 2>/dev/null; then
+            echo "::error::scripts/test-guard.mjs is absent from the default branch ($GUARD_REF): the guard cannot judge this PR"
+            exit 1
+          fi
+          git show "$GUARD_REF:scripts/test-guard.mjs" > "$GUARD"
+          node "$GUARD" --base "$BASE_SHA" --head "$HEAD_SHA" --allow-file .delivery/stories-touched
