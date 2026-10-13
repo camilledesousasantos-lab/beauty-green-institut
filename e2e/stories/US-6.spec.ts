@@ -8,7 +8,7 @@ test(
     await page.goto("/institut");
     const main = page.locator("main");
     await expect(main).toContainText(
-      "J'ai ouvert Beauty Green Institut il y a six ans",
+      "J'ai ouvert Beauty Green Institut en 2019",
     );
     await expect(main).toContainText("Camille, fondatrice");
 

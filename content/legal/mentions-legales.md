@@ -1,12 +1,13 @@
 ---
 title: Mentions légales
-updated: 2026-09-30
+updated: 2026-10-13
 ---
 ## Éditeur du site
 
 Ce site est édité par **Camille De Sousa Santos, EI Beauty Green Institut** (entrepreneur individuel).
 
 - SIRET : 877 642 355 00029
+- TVA non applicable, art. 293 B du CGI
 - Adresse : 8 rue Anatole France, 76000 Rouen
 - Téléphone : 07 86 66 87 99
 - Email : camilledesousasantos@gmail.com
